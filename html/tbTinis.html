@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+    <meta  charset="utf-8">
+    <meta name="author" content="Lionel Garnier, Université de Bourgogne">
+    <meta name="copyright" content="Lionel Garnier">
+    <title>table de tenis</title>
+    <script type="text/javascript" charset="UTF-8" src="../../libs/three/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../../libs/other/ThreeBSP.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../../libs/three/controls/TrackballControls.js"></script>
+    <script type="text/javascript" src="../../libs/util/dat.gui.js"></script>
+    <script type="text/javascript" src="../../libs/util/Stats.js"></script>
+    <script type="text/javascript" src="../../libs/util/util.js"></script>
+    <script type="text/javascript" src="../js/GeometrieUtile.js"></script>
+    <script type="text/javascript" src="../js/CameraLumiere.js"></script>
+    <script type="text/javascript" src="../js/ModeleMateriaux.js"></script>
+    <script type="text/javascript" src="../js/tbTenis.js"></script>
+    <script type="text/javascript" src="../js/menuGui.js"></script>
+    <link rel="stylesheet" href="../css/tbTenis.css">
+</head>
+
+
+<body onload="init()">
+    <div id="webgl"></div>
+    <form id="controle" action="mailto:toto@wanadoo.fr" method="post">
+      <fieldset>
+        <legend>AFFICHAGE SCORES</legend>
+        <div>
+          <table id="TableauScore">
+            <tr>
+              <th  class="autreCel">Equipes</th>
+              <th  class="autreCel" colspan="2">Equipe 1</th>
+              <th  class="autreCel"  colspan="2">Equipe 2</th>
+            </tr>
+            <tr >
+              <td class="autreCel">Scores</td>
+              <td  id="sc1" class="eq1Red" colspan="2"><span style=" color: red;"> 00</span></td>
+              <td  id="sc2" class="eq2Yel" colspan="2"><span style=" color: yellow;">00</span></td>
+              
+            </tr>
+           
+            </table>     
+               
+        </div>
+      </fieldset>
+    </form>
+    <p id="result"></p>
+</body>
+
+</html>
